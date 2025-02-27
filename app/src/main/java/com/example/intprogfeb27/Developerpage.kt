@@ -13,24 +13,21 @@ class Developerpage : Activity() {
 
         val settingsbutton: ImageView = findViewById(R.id.settingsbutton)
         settingsbutton.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, SettingsPage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
         val imagehome: ImageView = findViewById(R.id.homebutton)
         imagehome.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, LandingPage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
         val profilebutton: ImageView = findViewById(R.id.profilebutton)
         profilebutton.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, Profilepage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
 
 

@@ -47,7 +47,7 @@ class SettingsPage : AppCompatActivity() {
             finish()
         }
 
-        // Handle Logout Button Click
+
         val logoutButton: LinearLayout = findViewById(R.id.logoutbutton)
         logoutButton.setOnClickListener {
             showLogoutConfirmation()
@@ -59,7 +59,6 @@ class SettingsPage : AppCompatActivity() {
             .setTitle("Logout")
             .setMessage("Are you sure you want to logout?")
             .setPositiveButton("Logout") { _, _ ->
-                // Handle logout (e.g., clearing session and navigating to Login)
                 val intent = Intent(this, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)

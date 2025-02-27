@@ -12,10 +12,9 @@ class MainActivity : Activity() {
 
         val loginButton: Button = findViewById(R.id.loginbutton)
         loginButton.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, LandingPage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
     }
 }

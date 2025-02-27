@@ -14,24 +14,21 @@ class LandingPage : Activity() {
 
         val imageView6: ImageView = findViewById(R.id.imageView6)
         imageView6.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, Developerpage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
         val imageView11: ImageView = findViewById(R.id.imageView11)
         imageView11.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, Profilepage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
         val imageView10: ImageView = findViewById(R.id.imageView10)
         imageView10.setOnClickListener {
-            // Navigate to Landing Page
             val intent = Intent(this, SettingsPage::class.java)
             startActivity(intent)
-            finish() //
+            finish()
         }
 
 
